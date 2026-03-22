@@ -32,7 +32,7 @@ declare(strict_types=1);
 
 ### Задание 2. Класс `Transaction`.
 
-Создаю класс [Transaction](), который описывает одну банковскую транзакцию.
+Создаю класс [Transaction](transaction.php), который описывает одну банковскую транзакцию.
 
 Класс содержит следующие свойства:
 
@@ -46,7 +46,7 @@ declare(strict_types=1);
 
 ### Задание 3. Класс `TransactionRepository`.
 
-Создаю класс [TransactionRepository](dodo/index.php), который будет управлять коллекцией транзакций. Этот класс отвечает только за хранение данных и базовые операции доступа к ним.
+Создаю класс [TransactionRepository](transactionrepository.php), который будет управлять коллекцией транзакций. Этот класс отвечает только за хранение данных и базовые операции доступа к ним.
 
 Класс выполняет:
 
@@ -58,7 +58,7 @@ declare(strict_types=1);
 
 ### Задание 4. Класс `TransactionManager`.
 
-Создаю класс [TransactionManager](dodo/index.php), который  использует `TransactionRepository` для выполнения бизнес-логики.
+Создаю класс [TransactionManager](transactionmanager.php), который  использует `TransactionRepository` для выполнения бизнес-логики.
 
 Данный класс реализует:
 
@@ -70,7 +70,7 @@ declare(strict_types=1);
 
 ### Задание 5. Класс `TransactionTableRenderer`.
 
-Создаю отдельный класс [TransactionTableRenderer](dodo/index.php), который отвечает только за вывод транзакций в HTML. Этот класс получает список транзакций и формирует HTML-таблицу.
+Создаю отдельный класс [TransactionTableRenderer](transactiontablerenderer.php), который отвечает только за вывод транзакций в HTML. Этот класс получает список транзакций и формирует HTML-таблицу.
 
 Метод реализует:
 
@@ -95,7 +95,7 @@ declare(strict_types=1);
 * Разные описания.
 * Разных получателей.
 
-### Задание 7. Интерфейс [index](dodo/index.php).
+### Задание 7. Интерфейс [TransactionStorageInterface](transactionstorageinterface.php).
 
 Интерфейс должен содержать методы:
 
@@ -103,6 +103,9 @@ declare(strict_types=1);
 * Удаляет транзакцию из хранилища по ее уникальному идентификатору.`removeTransactionById(int $id): void`
 * Возвращает все транзакции, которые в данный момент хранятся в репозитории. `getAllTransactions(): array`
 * Выполняет поиск транзакции по ее уникальному идентификатору. `findById(int $id): ?Transaction`
+
+Все классы и интерфейсы реализованы в соответствии с заданием. Главный исполняемый файл, объединяющий все компоненты и демонстрирующий работу приложения, доступен по ссылке:
+<a href="index.php" target="_blank">index.php</a>
 
 ## Контрольные вопросы.
 
