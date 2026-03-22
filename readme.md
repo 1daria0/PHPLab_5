@@ -107,6 +107,19 @@ declare(strict_types=1);
 Все классы и интерфейсы реализованы в соответствии с заданием. Главный исполняемый файл, объединяющий все компоненты и демонстрирующий работу приложения, доступен по ссылке:
 <a href="index.php" target="_blank">index.php</a>
 
+## Итог
+
+После всей проблеланной работы, открыла в браузере файл index.php и вывело следующее:
+![table](images/transaction1.jpg)
+
+![transaction](images/transaction2.jpg)
+
+![table](images/transaction3.jpg)
+
+![table](images/transaction4.jpg)
+
+![table](images/transaction5.jpg)
+
 ## Контрольные вопросы.
 
 1. Зачем нужна строгая типизация в PHP и как она помогает при разработке?
